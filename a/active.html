@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        .ball {
+            position: absolute;
+            top: 250px;
+            left: 200px;
+            display: block;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            margin: 0;
+            background: radial-gradient(circle at 65px 65px, red, #210500);
+        }
+
+        #stage:hover #crile {
+            animation-name: crile_run;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes crile_run {
+            0% {
+                top: 250px;
+                left: 200px;
+            }
+
+            25% {
+                top: 150px;
+                left: 350px;
+                transform: scale(1.5);
+            }
+
+
+            50% {
+                top: 350px;
+                left: 500px;
+                transform: scale(1);
+            }
+
+            75% {
+
+                top: 150px;
+                left: 650px;
+                transform: scale(0.5);
+            }
+
+            100% {
+                top: 350px;
+                left: 800px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="stage">
+        <figure class="ball" id="crile"></figure>
+    </div>
+
+</body>
+
+</html>

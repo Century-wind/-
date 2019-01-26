@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>魁拔</title>
+    <script type="text/jscript" src="kuibaWeb.js">
+    </script>
+</head>
+
+<body onload="init()">
+    <style type="text/css">
+        nav {
+            border: 1px solid #F00;
+            width: 520px;
+            overflow: hidden
+        }
+
+        nav li {
+            line-height: 22px;
+            float: left;
+            padding: 0 6px;
+        }
+
+        nav li a {
+            color: #F00
+        }
+
+        /* 对nav设置红色边框，超链接位置为红色 */
+
+        input[type=range] {
+            outline: none;
+        }
+
+        input[type=range]::before {
+            content: attr(min);
+            padding-right: 5px;
+        }
+
+        input[type=range]::after {
+            content: attr(max);
+            padding-left: 5px;
+        }
+
+        output {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+            color: #538923;
+        }
+
+        .border {
+            /*            边框-固定-大小-颜色*/
+            border: solid 10px;
+            /*            边框圆角大小*/
+            border-radius: 20px;
+            border-color: darkolivegreen;
+            padding: 20px;
+            width: 1170px;
+            height: 720px;
+        }
+
+        .t-shadow {
+            font-family: #002663;
+            font-size: 25px;
+            text-shadow: 2px 2px 2px #4d4f53;
+            color: black;
+        }
+
+    </style>
+    <!--	<header> 标签定义文档的页眉（介绍信息）-->
+    <header style="color: white;background-color: #191919">
+        <h1 style="font-size: 50px;margin: 0" align="center"><a name="shouye">魁拔</a></h1>
+        <h2 style="margin: 0;word-spacing: 60px" align="center">电影 小说 漫画 人物介绍 故事背景 更多</h2>
+    </header>
+    <!--	<figure> 标签规定独立的流内容（图像、图表、照片、代码等等）。-->
+    <figure style="margin: 0;background-color: black" align="center">
+        <div align="right"> <img alt="魁拔，整装出发！" src="kb.jpg" width="75%" height="450" /></div>
+        <!--	figcaption为figure 元素的标题-->
+        <figcaption style="color:snow">欢迎回来！</figcaption>
+    </figure>
+    <div align="center">
+        <!--   <article> 标签规定独立的自包含内容。：论坛帖子 报纸文章 博客条目 用户评论-->
+        <article style="width: 50%;text-align: left; ">
+            <h3 style="text-align: left"><a name="xiangguan">《魁拔》</a></h3>
+            <p style="text-indent: 35px"> 是由北京青青树动漫科技有限公司于2011年开始推出的由王川执导的国产奇幻动画系列大电影。作品围绕主人公蛮吉等人，
+                <br />讲述了在架空的世界——元泱界中，天地两界共同合力对抗每隔333年诞生的可怕异常生命——魁拔的故事。</p>
+            <h3 style="text-align: left">故事简介</h3>
+            <p style="text-indent: 35px">平静安详的元泱境界，每隔333年，总会有一个神秘而恐怖的异常生物重生，它就是魁拔！魁拔的每一次出现，都会给元泱境界带来巨大的灾难！即便是天界的神族，也在劫难逃。在天地两界各种力量的全力打击下，魁拔一次次被消灭，但又总是按333年的周期重新出现。魁拔纪元1664年，天神经过精确测算后，在魁拔苏醒前一刻对其进行毁灭性打击。但谁都没有想到，由于一个差错导致新一代魁拔成功地逃脱了致命一击。很快，天界魁拔司和地界神圣联盟均探测到了魁拔依然生还的迹象。因此，找到魁拔，彻底消灭魁拔，再一次成了各地热血勇士的终极目标。</p>
+        </article>
+        <figure class="border" style="margin: 0;padding: 0;" align="center"> <img alt="魁拔！" src="9.jpg" /> </figure>
+        <!--	<section>文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分。-->
+        <section style="width: 50%;text-align: left">
+            <h3>人物信息</h3>
+            <!--	<details> （收缩/显示）标签用于描述文档或文档某个部分的细节。-->
+            <details>
+                <summary>魁拔</summary>
+                <p style="color: slategray">地界最强生物，也是最富有情感的真正的战士。</p>
+            </details>
+            <hr />
+            <details>
+                <summary>蛮吉</summary>
+                <p style="color: slategray">故事的主人公，其真实身份是第六代魁拔，是个敏感懂事的孩子，有着和蛮大人同样的梦想，打败魁拔，建功立业，光大纹耀。</p>
+            </details>
+            <hr />
+            <details>
+                <summary>蛮小满</summary>
+                <p style="color: slategray">蛮大人和蛮吉一样，也是孤儿，在《魁拔》的世界里，孤儿是不会被授予纹耀的，因此也不会得到社会的认同和相应的地位，但他不因此而自卑，反而更加斗志昂扬，乐观向上。</p>
+            </details>
+            <hr />
+            <details>
+                <summary>幽冥狂</summary>
+                <p style="color: slategray">雾国将纹耀候补者，魁拔忠诚的“死敌”！他的五人小队——白落提、丰和、英宋、桓泽金、广秀，都是无纹耀的白身。</p>
+            </details>
+            <hr />
+            <details>
+                <summary>镜心</summary>
+                <p style="color: slategray">绝对理性统治社会-天界的天神，和蛮吉的遭遇，让镜心的天神价值观受到强烈的冲击，并慢慢理解了当初母亲选择战死的心情。</p>
+            </details>
+            <hr />
+        </section>
+        <div align="left" style="width: 50%">
+            <p>相关人物:</p>
+            <div class="inline">
+                <img alt="蛮吉" src="mj.jpg" style="vertical-align: middle" width="200" height="120">
+                <img alt="蛮大人" src="mdr.jpg" style="vertical-align: middle" width="200" height="120">
+                <img alt="镜心" src="jx.jpg" style="vertical-align: middle" width="200" height="120">
+                <img alt="幽冥狂" src="6.jpg" style="vertical-align: middle" width="200" height="120">
+            </div>
+        </div>
+        <div align="left" style="width: 54%">
+            <div class="t-shadow">精彩视频</div>
+            <audio id="music" autoplay controls loop>
+                <source src="jinxinMusic.mp3" type="audio/mp3">
+            </audio>
+            <br />
+            <video id="video" autoplay controls muted width="944">
+                <source src="kuibaback.Ogg" type="video/ogg"> </video>
+        </div>
+        <!--	<form> 标签用于为用户输入创建 HTML 表单：文本字段、复选框、单选框、提交按钮等等-->
+        <form style="width: 50%;text-align: left" oninput="x.value=parseInt(a.value/10) ">
+            <p>评论：</p>
+            <textarea id="text" rows="13px" cols="70px" placeholder="想对蛮大人说什么吗?"></textarea>
+            <output id="result"></output>
+            <br /> 您的邮箱：
+            <input type="email" name="email" placeholder="123@xx.com">
+            <br /> 想看
+            <input name="想看" type="radio" value="sex"> 看过
+            <input name="看过" type="radio" value="sex">
+            <br />
+            <p align="left" style="width: 50%">请选择您的评分：</p> 0
+            <input align="left" type="range" id="a" value="60">10&nbsp;
+            <output style="display: inline" name="x" for="a"></output>
+            <input name="提交" type="submit" onclick="saveData();" value="提交">
+        </form>
+        <hr>
+        <table id="dataform" border="1"></table>
+        <p id="msg"></p>
+        <!--	nav链接-->
+        <nav> <a href="https://www.baidu.com/">联系我们</a> <a href="https://www.baidu.com/">制作组</a>
+            <!--	段落跳转--><a href="#xiangguan">电影相关</a> <a href="#shouye">返回顶部</a> </nav>
+    </div>
+</body>
+
+</html>
